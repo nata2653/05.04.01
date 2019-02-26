@@ -1,0 +1,539 @@
+html,
+body {
+    background-color: #F2F2F2;
+    margin: 0;
+}
+
+#liste {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 40px;
+    width: 100vw;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+nav {
+    text-align: center;
+    line-height: 40px;
+    margin: 30px;
+    cursor: pointer;
+}
+
+nav .filter {
+    display: inline-table;
+    border-top: 3px black solid;
+    color: #343333;
+    padding: 15px;
+    margin: 10px;
+    font-size: 1.2rem;
+
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+nav .filter:hover {
+    border-bottom: 3px black solid;
+    border-top: none;
+}
+
+nav a {
+    display: inline-table;
+    border-top: 3px black solid;
+    color: #343333;
+    padding: 15px;
+    margin: 10px;
+    font-size: 1.2rem;
+
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+nav a:hover {
+    border-bottom: 3px black solid;
+    border-top: none;
+    text-decoration: none;
+}
+
+
+.price {
+    text-align: right;
+    font-style: italic;
+}
+
+.valgt {
+    border-bottom: 3px black solid;
+}
+
+.visteRetter {
+    margin: 10px;
+    margin-top: 30px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 7px 7px 10px 1px #c6c6c6;
+    background-color: white;
+    cursor: pointer;
+}
+
+.visteRetter:hover {
+    padding: 5px;
+}
+
+.ret {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+.sectionwrapper {
+    flex-basis: 400px;
+    text-align: center;
+    padding-right: 20px;
+}
+
+.navn {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+
+h1 {
+    text-align: center;
+    font-family: 'futura-pt', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 4.2rem;
+}
+
+h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+a {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
+#indhold {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 90vw;
+}
+
+#luk {
+    box-sizing: border-box;
+    padding-right: 50px;
+    color: white;
+    z-index: 2;
+    text-align: right;
+}
+
+#popup {
+    background-color: rgba(242, 242, 242, 0.85);
+    width: 100vw;
+    height: 90vh;
+    margin: 0 auto;
+    padding: 10px;
+    top: 2vw;
+    position: fixed;
+}
+
+#popup img {
+    width: auto;
+    height: 350px;
+}
+
+/*-------------------BURGERMENU-------------------*/
+
+#menuknap {
+    display: block;
+    text-align: left;
+    font-size: 3rem;
+    font-family: 'helvetica', sans-serif;
+    cursor: pointer;
+    color: white;
+    padding: 10px 0;
+}
+
+#menuknap_front {
+    color: black;
+    display: block;
+    text-align: left;
+    font-size: 3rem;
+    font-family: 'helvetica', sans-serif;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+#menu {
+    transition: transform 0.3s;
+    list-style-type: none;
+    transform-origin: top left;
+    background-color: rgba(252, 252, 252, 0.87);
+    width: 300px;
+    text-align: left;
+    padding-bottom: 20px;
+    z-index: 3;
+}
+
+#burger {
+    width: 200px;
+    z-index: 3;
+}
+
+#menu li {
+    padding-top: 30px;
+    text-align: left;
+    z-index: 3;
+}
+
+#menu a {
+    font-size: 1rem;
+    border-top: none;
+}
+
+/*-------------------INDEX-------------------*/
+.splash {
+    background-image: url("imgs/pizza_m_logo.jpg");
+    height: 70vh;
+    width: 100vw;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.book {
+    border: 2px black solid;
+    text-align: center;
+    width: 100px;
+    background-color: white;
+
+
+    position: absolute;
+    top: 60%;
+    left: 45%;
+}
+
+#section {
+    background-color: white;
+    padding: 10px;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    margin: 100px;
+
+    font-size: 1.2rem;
+}
+
+
+.info p {
+    width: 300px;
+    padding: 0px 0px 50px 50px;
+}
+
+.info h2 {
+    padding-left: 50px;
+}
+
+#billeder_front {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 40px;
+    padding: 50px;
+}
+
+#billeder_front img {
+    height: auto;
+}
+
+.today {
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+
+.open {
+    text-align: center;
+
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    margin: 100px;
+
+    font-size: 1.2rem;
+}
+
+/*-------------------MENUKORT-------------------*/
+
+.menu_billede {
+    background-image: url("imgs/pasta_front.jpg");
+    height: 60vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.back {
+    width: 50px;
+    height: 50px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+/*-------------------VINKORT-------------------*/
+.vin_billede {
+    background-image: url("imgs/vinmark.jpg");
+    height: 60vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.visteRetter img {
+    height: 200px;
+    width: auto;
+}
+
+/*-------------------INFO-------------------*/
+.desc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    padding: 20px;
+    align-items: center;
+    margin: 50px;
+}
+
+.info_billede {
+    margin-right: 100px;
+}
+
+.info_text {
+    width: 500px;
+    margin-left: 100px;
+}
+
+.footer_info {
+    background-color: #F2F2F2;
+}
+
+/*-------------------FOOTER-------------------*/
+
+footer {
+    margin-top: 20px;
+    background-color: white;
+    padding: 10px 20px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.front_footer {
+    background-color: #F2F2F2;
+}
+
+#some img {
+    width: 25px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+/*-------------------MEDIAQUERIES------------------*/
+
+@media screen and (max-width: 768px) {
+    .info img {
+        padding-top: 80px;
+    }
+
+    .desc {
+        margin: 0px;
+    }
+
+    .info_billede {
+        margin-right: 100px;
+    }
+
+    .info_text {
+        width: 300px;
+        margin-left: 100px;
+    }
+
+    .info p {
+        width: 250px;
+        padding: 0px 0px 50px 0px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .splash {
+        background-image: url("imgs/pizza_parma.jpg");
+    }
+
+    .book {
+        top: 74%;
+        left: 60%;
+        display: none;
+    }
+
+    #section {
+        background-color: white;
+    }
+
+    .info {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        margin: 10px;
+    }
+
+    .info p {
+        font-size: 1rem;
+        padding: 10px;
+        text-align: center;
+        width: 310px;
+        margin: 0px;
+    }
+
+    .info h2 {
+        text-align: center;
+        padding: 10px;
+        margin: 1px;
+    }
+
+    .info img {
+        padding-top: 10px;
+    }
+
+    #billeder_front {
+        display: none;
+    }
+
+    #billeder_front img {
+        height: auto;
+    }
+
+    .today {
+        font-weight: 900;
+        font-size: 1.4rem;
+    }
+
+    .open {
+        text-align: center;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+        margin: 0px;
+
+        font-size: 1.2rem;
+    }
+
+    nav a {
+        padding: 10px;
+        margin: 10px;
+        font-size: 1rem;
+        margin-top: 180px;
+    }
+
+    /*---------MENUKORT---------*/
+
+    .menu_billede {
+        background-image: url("imgs/risottoLille.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .visteRetter {
+        margin: 20px;
+        margin-top: 30px;
+        padding: 10px;
+        text-align: center;
+        box-shadow: 7px 7px 10px 1px #c6c6c6;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    #liste {
+        grid-template-columns: 1fr;
+    }
+
+    .valgt {
+        border-bottom: none;
+        font-weight: 900;
+    }
+
+    nav .filter {
+        display: inline;
+
+        border-top: none;
+        color: #343333;
+        padding: 5px;
+        margin: 1px;
+        font-size: 1rem;
+
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+
+    #popup img {
+        width: auto;
+        height: 300px;
+    }
+
+    /*-----------INFO-----------*/
+    .desc {
+        grid-template-columns: 1fr;
+        margin: 0px;
+        text-align: center;
+    }
+
+    .info_text {
+        width: 300px;
+        margin-left: 0px;
+    }
+
+    .info_billede {
+        margin-right: 0px;
+    }
+
+    .footer_info {
+        background-color: #F2F2F2;
+    }
+
+    /*-------------------BURGERMENU-------------------*/
+
+
+
+    #burger a {
+        margin-top: 1px;
+    }
+
+
+
+
+}

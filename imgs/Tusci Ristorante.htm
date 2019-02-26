@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://127.0.0.1:57912/index.html -->
+<html lang="da"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tusci Ristorante</title>
+    <link rel="stylesheet" href="./Tusci Ristorante_files/styles.css">
+    <link href="./Tusci Ristorante_files/css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="splash">
+            <nav id="burger">
+                <div id="menuknap_front">☰</div>
+                <ul id="menu" class="hidden">
+                    <li><a href="http://127.0.0.1:57912/index.html">Forside</a></li>
+                    <li><a href="http://127.0.0.1:57912/menukort.html">Menukort</a></li>
+                    <li><a href="http://127.0.0.1:57912/vinkort.html">Vinkort</a></li>
+                    <li><a href="http://127.0.0.1:57912/info.html">Informationer</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="front_logo"></div>
+        <div class="book">
+            <p>Book Nu</p>
+        </div>
+
+        <nav>
+            <a href="http://127.0.0.1:57912/menukort.html">Menukort</a>
+            <a href="http://127.0.0.1:57912/vinkort.html">Vinkort</a>
+            <a href="http://127.0.0.1:57912/info.html">Informationer</a>
+        </nav>
+    </header>
+
+    <div id="section">
+        <div class="info">
+            <div>
+                <h2>Om Tusci Ristorante</h2>
+                <p>Tusci Ristorante er en lille, autentisk italiensk restaurant som har beliggenhed i Helsingør, kun få minutters gå gang fra havnen og Kronborg.
+                    På Tusci Ristorante er der en splinterny menu. Som sædvanlig bugner menuen af spændende smage og ingredienser.
+                    Hos os er det altid muligt at vælge imellem en masse forskellige, lækre retter som hver især byder på forskellige smage fra det italienske køkken. Vores retter er klassiske og smagsfulde, alle med oprindelse i Toscana.</p>
+            </div>
+            <img src="./Tusci Ristorante_files/montepulciano-1639451_960_720.jpg" alt="toscana">
+        </div>
+    </div>
+
+    <div id="billeder_front">
+        <img src="./Tusci Ristorante_files/bruschetta.jpg" alt="bruschetta">
+        <img src="./Tusci Ristorante_files/gnocchi.jpg" alt="gnocchi">
+        <img src="./Tusci Ristorante_files/tiramisu.jpg" alt="tiramisu">
+        <img src="./Tusci Ristorante_files/druer.jpg" alt="druer">
+    </div>
+
+    <div id="section">
+        <div class="open">
+            <img src="./Tusci Ristorante_files/lokation.png" alt="kort_over_helsingør">
+
+            <div class="open_text">
+                <h2>Åbningstider:</h2>
+
+                <p class="today">I dag: 17.30-24.00</p>
+
+                <p>Tirsdag-lørdag: 17.30-24.00 <br>
+                    Frokost fredag og lørdag: 12.00-15.00 <br>
+                    søndag: Lukket.
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="front_footer">
+        <div id="kontakt">
+            <a href="http://127.0.0.1:57912/info.html">Kontakt os</a><br>
+            <p>Kongensgade 2D <br>
+                3000 Helsingør
+            </p>
+        </div>
+        <div id="some">
+            <img src="./Tusci Ristorante_files/instagram.png" alt="instagram">
+            <img src="./Tusci Ristorante_files/facebook.png" alt="facebook">
+        </div>
+    </footer>
+    <script>
+        document.querySelector("#menuknap_front").addEventListener("click", toggleMenu);
+
+        function toggleMenu() {
+            console.log("Toogle menu");
+            document.querySelector("#menu").classList.toggle("hidden");
+
+            let erSkjult = document.querySelector("#menu").classList.contains("hidden");
+
+
+            if (erSkjult == true) {
+                document.querySelector("#menuknap_front").textContent = "☰";
+            } else {
+                document.querySelector("#menuknap_front").textContent = "X";
+            }
+        }
+    </script>
+
+
+</body></html>
