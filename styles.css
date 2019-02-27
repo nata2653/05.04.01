@@ -56,6 +56,10 @@ nav a:hover {
     text-decoration: none;
 }
 
+.nav_up {
+    margin-bottom: 0px;
+}
+
 .valgt {
     border-bottom: 3px black solid;
 }
@@ -174,6 +178,7 @@ button {
     width: 200px;
     position: absolute;
     left: 40px;
+    top: -30px;
 }
 
 /*-------------------BURGERMENU-------------------*/
@@ -186,6 +191,7 @@ button {
     cursor: pointer;
     color: white;
     padding: 10px 0;
+    z-index: 2;
 }
 
 #menuknap_front {
@@ -248,7 +254,7 @@ button {
     left: 45%;
 }
 
-#section {
+.section {
     background-color: white;
     padding: 10px;
 }
@@ -352,6 +358,7 @@ button {
 .info_text {
     width: 500px;
     margin-left: 100px;
+    text-align: left;
 }
 
 .footer_info {
@@ -379,223 +386,233 @@ footer {
 }
 
 /*-------------------MEDIAQUERIES------------------*/
-
-@media screen and (max-width: 1024px) {
-    .info img {
-        padding-top: 0px;
-    }
-
-    .desc {
-        grid-template-columns: 1fr;
-    }
-
-    .info_billede {
-        margin-right: 0px;
-
-    }
-
-    .info_text {
-        width: 600px;
-        margin-left: 0px;
-    }
-
-    .info p {
-        width: 550px;
-        padding: 0px 0px 0px 0px;
-    }
-
-    .info {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 20px;
-        margin: 10px 100px;
-    }
-
-    .info h2 {
-        padding-left: 170px;
-    }
-
-    .book {
-        left: 41.3%;
-    }
-
-    #liste {
-        grid-column-gap: 0px;
-    }
-
-    .open {
-        text-align: center;
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    #burger {
-        display: block;
-    }
-
-    .nav_up {
-        display: none;
-    }
-
-    .logo {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .splash {
-        background-image: url("imgs/logo_iphone.jpg");
-        background-position: top;
-    }
-
-    .book {
-        top: 74%;
-        left: 60%;
-        display: none;
-    }
-
-    #section {
-        background-color: white;
-        display: flex;
-        justify-content: center;
-    }
-
-    .info {
-        margin: 0px;
-    }
-
-    .info p {
-        font-size: 1rem;
-        padding: 10px;
-        width: 290px;
-        margin: 0px;
-    }
-
-    .info h2 {
-        text-align: center;
-        padding: 10px;
-        margin: 1px;
-    }
-
-    .info img {
-        padding-top: 10px;
-    }
-
-    #billeder_front {
-        display: none;
-    }
-
-    #billeder_front img {
-        height: auto;
-    }
-
-    .today {
-        font-weight: 900;
-        font-size: 1.4rem;
-    }
-
-    .open {
-        text-align: center;
-
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 40px;
-        margin: 0px;
-
-        font-size: 1.2rem;
-    }
-
-    nav a {
-        padding: 10px;
-        margin: 10px;
-        font-size: 1rem;
-        margin-top: 180px;
-    }
-
-    nav {
-        margin: 0;
-    }
-
-    .vin_billede {
-        background-image: url("imgs/vinglas.jpg");
-        height: 100vh;
-    }
-
-    /*---------MENUKORT---------*/
-
-    .menu_billede {
-        background-image: url("imgs/gnocchi_rejer.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100vw;
-        height: 100vh;
-    }
-
-    .visteRetter {
-        margin: 20px;
-        margin-top: 30px;
-        padding: 10px;
-        text-align: center;
-        box-shadow: 7px 7px 10px 1px #c6c6c6;
-        background-color: white;
-        cursor: pointer;
-    }
-
-    #liste {
-        grid-template-columns: 1fr;
-    }
-
-    .valgt {
-        border-bottom: none;
-        font-weight: 900;
-    }
-
-    nav .filter {
-        display: inline;
-
-        border-top: none;
-        color: #343333;
-        padding: 5px;
-        margin: 1px;
-        font-size: 1rem;
-
-        font-family: 'Open Sans Condensed', sans-serif;
-    }
-
-    #popup img {
-        width: auto;
-        height: 300px;
-    }
-
-    /*-----------INFO-----------*/
-    .desc {
-        grid-template-columns: 1fr;
-        margin: 0px;
-        text-align: center;
-    }
-
+@media screen and (max-width: 1200px) {
     .info_text {
         width: 300px;
-        margin-left: 0px;
-    }
-
-    .info_billede {
-        margin-right: 0px;
-    }
-
-    .footer_info {
-        background-color: #F2F2F2;
-    }
-
-    /*-------------------BURGERMENU-------------------*/
-
-
-
-    #burger a {
-        margin-top: 1px;
+        margin-left: 50px;
     }
 
 
+    @media screen and (max-width: 1024px) {
+        .info img {
+            padding-top: 0px;
+        }
+
+        .desc {
+            grid-template-columns: 1fr;
+        }
+
+        .info_billede {
+            margin-right: 0px;
+
+        }
+
+        .info_text {
+            width: 600px;
+            margin-left: 0px;
+        }
+
+        .info p {
+            width: 550px;
+            padding: 0px 0px 0px 0px;
+        }
+
+        .info {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+            margin: 10px 100px;
+        }
+
+        .info h2 {
+            padding-left: 170px;
+        }
+
+        .book {
+            left: 41.3%;
+        }
+
+        #liste {
+            grid-column-gap: 0px;
+        }
+
+        .open {
+            text-align: center;
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        #burger {
+            display: block;
+        }
+
+        .nav_up {
+            display: none;
+        }
+
+        .logo {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 425px) {
+        .splash {
+            background-image: url("imgs/logo_iphone.jpg");
+            background-position: top;
+        }
+
+        .book {
+            top: 74%;
+            left: 60%;
+            display: none;
+        }
+
+        #section {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+        }
+
+        .info {
+            margin: 0px;
+        }
+
+        .info p {
+            font-size: 1rem;
+            padding: 10px;
+            width: 290px;
+            margin: 0px;
+        }
+
+        .info h2 {
+            text-align: center;
+            padding: 10px;
+            margin: 1px;
+        }
+
+        .info img {
+            padding-top: 10px;
+        }
+
+        #billeder_front {
+            display: none;
+        }
+
+        #billeder_front img {
+            height: auto;
+        }
+
+        .today {
+            font-weight: 900;
+            font-size: 1.4rem;
+        }
+
+        .open {
+            text-align: center;
+
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 40px;
+            margin: 0px;
+
+            font-size: 1.2rem;
+        }
+
+        nav a {
+            padding: 10px;
+            margin: 10px;
+            font-size: 1rem;
+            margin-top: 40px;
+        }
+
+        nav {
+            margin: 0;
+        }
+
+        .vin_billede {
+            background-image: url("imgs/vinglas.jpg");
+            height: 100vh;
+        }
+
+        #menuknap {
+            color: black;
+        }
+
+        /*---------MENUKORT---------*/
+
+        .menu_billede {
+            background-image: url("imgs/gnocchi_rejer.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .visteRetter {
+            margin: 20px;
+            margin-top: 30px;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 7px 7px 10px 1px #c6c6c6;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        #liste {
+            grid-template-columns: 1fr;
+        }
+
+        .valgt {
+            border-bottom: none;
+            font-weight: 900;
+        }
+
+        nav .filter {
+            display: inline;
+
+            border-top: none;
+            color: #343333;
+            padding: 5px;
+            margin: 1px;
+            font-size: 1rem;
+
+            font-family: 'Open Sans Condensed', sans-serif;
+        }
+
+        #popup img {
+            width: auto;
+            height: 300px;
+        }
+
+        /*-----------INFO-----------*/
+        .desc {
+            grid-template-columns: 1fr;
+            margin: 0px;
+            text-align: center;
+        }
+
+        .info_text {
+            width: 300px;
+            margin-left: 0px;
+        }
+
+        .info_billede {
+            margin-right: 0px;
+        }
+
+        .footer_info {
+            background-color: #F2F2F2;
+        }
+
+        /*-------------------BURGERMENU-------------------*/
 
 
-}
+
+        #burger a {
+            margin-top: 1px;
+        }
+
+
+
+
+    }
